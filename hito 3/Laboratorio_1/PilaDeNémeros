@@ -1,0 +1,42 @@
+(Integer elemento : pila){
+            System.out.print("Número= "+elemento+" ");
+        }
+        System.out.println("");
+    }
+    public static void CantParImpar(Stack<Integer> pila){
+        int contPar = 0;
+        int contImp = 0;
+        int php = 1;
+        for (Integer elemento : pila) {
+
+            if (elemento % 2 == 0 ){
+                contPar++;
+            }
+            else {
+                contImp++;
+            }
+        }
+        System.out.print("PARES REPETIDOS "+ contPar+"  ");
+        System.out.println("IMPARES REPETIDOS "+contImp+"  ");
+    }
+    public static int contarNumero(Stack<Integer> pilaNumeros, int numeroBuscado) {// mandamos los parametros
+        int contador = 0;//inicia en cero y se ira incrementando si qes que existe repetidos en la pila
+        Stack<Integer> pilaTemporal = new Stack<>();
+
+        while (!pilaNumeros.isEmpty()) {
+            int numeroActual = pilaNumeros.pop();
+            if (numeroActual == numeroBuscado) {
+                contador++;
+            }
+            pilaTemporal.push(numeroActual);
+        }
+
+        while (!pilaTemporal.isEmpty()) {
+            pilaNumeros.push(pilaTemporal.pop());
+        }
+
+        return contador;
+    }
+
+
+}
