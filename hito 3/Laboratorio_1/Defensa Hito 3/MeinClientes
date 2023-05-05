@@ -1,0 +1,17 @@
+import java.util.Stack;
+
+public class MeinClientes {
+    public static void main(String[] args) {
+        /*PilaPersona pilaPersona = new PilaPersona();
+        pilaPersona.push("Juan", 25, "Pérez");*/
+        System.out.println("jl");
+        PilaClientes pilaClientes = new PilaClientes();
+       // pilaClientes.agregar("juan",45,"Perez");
+       // pilaClientes.agregar("Joel",24,"Gisbert");
+
+        pilaClientes.push("Juan", 19, "Pérez","Masculino","El altp");
+        pilaClientes.push("María", 30, "González", "Femenino","La Paz" );
+        pilaClientes.push("Pedro", 35, "López", "Masculino", "El Alto");
+    }
+    
+    }
