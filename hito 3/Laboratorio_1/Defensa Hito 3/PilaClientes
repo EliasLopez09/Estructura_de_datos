@@ -1,0 +1,34 @@
+import java.util.Stack;
+
+public class PilaClientes {//creamos una clase pilaCliente
+    private Stack<Persona> pila;//declaramos pila como privado
+    public PilaClientes() {//sera un metodo costructor
+      this.pila = new Stack<>();//creamos un pila vacia cuando nos
+                //llame la clase mein
+        System.out.println("pilaclientes");
+    }
+
+    public void push(String nombre, int edad, String apellido, String genreno, String direccion) {//push() es para agredar datos en la pila
+                    //es este caso es aqui donde llamaremos alos atributos
+        Persona persona = new Persona(nombre, edad, apellido, genreno, direccion);
+        persona.Mostrar();
+        this.pila.push(persona);
+    }
+
+    public Persona pop() {
+        return pila.pop();
+    }
+
+    public Persona peek() {
+        return pila.peek();
+    }
+
+    public boolean isEmpty() {
+        return pila.isEmpty();
+    }
+
+    public int size() {
+        return pila.size();
+    }
+
+}
