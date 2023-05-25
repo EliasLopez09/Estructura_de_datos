@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Tu página web</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    </head>
+
+<body>
+    <div class="header">
+        <ul>
+            <li>
+                <a href="#">Hogar</a>
+                <ul>
+                    <li><a href="#">Perros</a></li>
+                    <li><a href="#">Gatos</a></li>
+                    <li><a href="#">Otros animales</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="#">Conose</a> 
+                <ul>
+                    <li><a href="#">Sobre nuestro refugio</a></li>
+                    <li><a href="#">Adopta un animal</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Contactanos</a>
+                <ul>
+                    <li><a href="#">Agenda una Visita</a></li>
+                    <li><a href="#">Visita nuestra veterinaria</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <button href="my-button">
+        Chatboot 
+    </button>
+    <a href="https://www.omen.com/us/en/laptops/2021-victus-16-1-intel.html" class="btn-wsp" target="_blank">
+	    <i class="fa fa-whatsapp icono"></i>
+	</a>
+</body>
+
+</html>
